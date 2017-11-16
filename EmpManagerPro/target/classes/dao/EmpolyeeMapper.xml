@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.EmpolyeeMapper">
+    <!--public Empolyee getEmpById(Integer id);-->
+    <select id="getEmpById" resultType="model.Empolyee">
+        select *from tbl_empolyee where id = #{id}
+    </select>
+
+    <!--public int addEmp(Empolyee empolyee);-->
+    <insert id="addEmp" useGeneratedKeys="true">
+        insert into tbl_empolyee (emp_name,emp_sex,emp_age,emp_tel)
+        values(#{emp_name},#{emp_sex},#{emp_age},#{emp_tel})
+    </insert>
+
+    <!--public List<Empolyee> getAllEmps();-->
+    <select id="getAllEmps" resultType="model.Empolyee">
+        select *from tbl_empolyee
+    </select>
+
+    <!--public void delEmpById(Integer id);-->
+    <delete id="delEmpById">
+        delete from tbl_empolyee where id = #{id}
+    </delete>
+
+    <!--public Empolyee updateEmp(Empolyee empolyee);-->
+    <update id="updateEmp" useGeneratedKeys="true" parameterType="model.Empolyee">
+        update tbl_empolyee
+        set
+        emp_name = #{emp_name},
+        emp_sex = #{emp_sex},
+        emp_age = #{emp_age},
+        emp_tel = #{emp_tel}
+        where id = #{id}
+        <!--<trim prefix="set" suffixOverrides=",">-->
+            <!--<if test="emp_name!=null">-->
+                <!--emp_name = #{emp_name},-->
+            <!--</if>-->
+            <!--<if test="emp_sex!=null">-->
+                <!--emp_sex = {emp_sex},-->
+            <!--</if>-->
+            <!--<if test="emp_age!=null">-->
+                <!--emp_age = #{emp_age},-->
+            <!--</if>-->
+            <!--<if test="emp_tel!=null">-->
+                <!--emp_tel = #{emp_tel},-->
+            <!--</if>-->
+        <!--</trim>-->
+        <!--where id = #{id}-->
+    </update>
+</mapper>

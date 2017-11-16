@@ -24,6 +24,8 @@
 <%--模拟返回json--%>
 <input type="submit" id="jsonButton" value="点击获取json">
 <p id="jsoninfo"></p>
+<hr>
+<a href="pages/index.jsp">进入管理平台</a>
 </body>
 </html>
 
