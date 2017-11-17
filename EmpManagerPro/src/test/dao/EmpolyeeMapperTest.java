@@ -1,3 +1,5 @@
+package dao;
+
 import dao.EmpolyeeMapper;
 import model.Empolyee;
 import org.apache.ibatis.session.SqlSession;
@@ -5,7 +7,6 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;
 import util.SqlSessionFactoryTool;
 
-import javax.sound.midi.Soundbank;
 import java.io.IOException;
 
 /**
@@ -42,6 +43,7 @@ public class EmpolyeeMapperTest {
             e.setEmp_age(20);
             e.setEmp_sex("男");
             e.setEmp_tel("13296540788");
+            e.setDep_id(1);
 
             int i = mapper.addEmp(e);
             System.out.println(i);
@@ -60,10 +62,8 @@ public class EmpolyeeMapperTest {
         try {
             EmpolyeeMapper mapper = openSession.getMapper(EmpolyeeMapper.class);
 
-            Empolyee empolyee = new Empolyee();
-            empolyee.setId(1);
-            empolyee.setEmp_name("哈哈哈");
-//            empolyee.setEmp_age(1111);
+            Empolyee empolyee = new Empolyee(1, "王刚", "男", 22, "465454",1);
+            empolyee.setEmp_name(null);
 
             System.out.println(empolyee);
 

@@ -8,7 +8,7 @@ package model;
 public class Department {
     private Integer id;
     private String dep_name;
-    private String dep_describetion;
+    private String dep_des;
 
     public Integer getId() {
         return id;
@@ -26,12 +26,20 @@ public class Department {
         this.dep_name = dep_name;
     }
 
-    public String getDep_describetion() {
-        return dep_describetion;
+    public String getDep_des() {
+        return dep_des;
     }
 
-    public void setDep_describetion(String dep_describetion) {
-        this.dep_describetion = dep_describetion;
+    public void setDep_des(String dep_des) {
+        this.dep_des = dep_des;
+    }
+
+    public Department() {
+    }
+
+    public Department( String dep_name, String dep_des) {
+        this.dep_name = dep_name;
+        this.dep_des = dep_des;
     }
 
     @Override
@@ -39,7 +47,7 @@ public class Department {
         return "Department{" +
                 "id=" + id +
                 ", dep_name='" + dep_name + '\'' +
-                ", dep_describetion='" + dep_describetion + '\'' +
+                ", dep_des='" + dep_des + '\'' +
                 '}';
     }
 }

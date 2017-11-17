@@ -11,6 +11,15 @@ public class Empolyee {
     private String emp_sex;
     private Integer emp_age;
     private String emp_tel;
+    private Integer dep_id;
+
+    public Integer getDep_id() {
+        return dep_id;
+    }
+
+    public void setDep_id(Integer dep_id) {
+        this.dep_id = dep_id;
+    }
 
     public Integer getId() {
         return id;
@@ -50,6 +59,18 @@ public class Empolyee {
 
     public void setEmp_tel(String emp_tel) {
         this.emp_tel = emp_tel;
+    }
+
+    public Empolyee() {
+    }
+
+    public Empolyee(Integer id, String emp_name, String emp_sex, Integer emp_age, String emp_tel,Integer dep_id) {
+        this.id = id;
+        this.emp_name = emp_name;
+        this.emp_sex = emp_sex;
+        this.emp_age = emp_age;
+        this.emp_tel = emp_tel;
+        this.dep_id = dep_id;
     }
 
     @Override
