@@ -8,6 +8,7 @@ import org.junit.Test;
 import util.SqlSessionFactoryTool;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * create by Gary Wong
@@ -75,5 +76,15 @@ public class EmpolyeeMapperTest {
         } finally {
             openSession.close();
         }
+    }
+
+    @Test
+    public void test4() throws IOException {
+        SqlSessionFactory sqlSessionFactory = SqlSessionFactoryTool.getSqlSessionFactory();
+        SqlSession openSession = sqlSessionFactory.openSession();
+
+        EmpolyeeMapper mapper = openSession.getMapper(EmpolyeeMapper.class);
+        List<Empolyee> empolyeeList = mapper.getEmpByEmpName("1");
+        System.out.println(empolyeeList);
     }
 }

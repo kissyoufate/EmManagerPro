@@ -10,16 +10,17 @@
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
+    <base href="<%=basePath%>">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="pages/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pages/css/style.css">
     <title>员工管理</title>
-    <base href="<%=basePath%>">
 </head>
 <body>
 <div class="well" style="font-size: 20px">员工管理</div>
@@ -27,8 +28,8 @@
 <!--员工的头,包含搜索,添加等功能-->
 <div class="emp_top">
     <div class="emp_serch">
-        <form action="" class="form-inline">
-            <input type="text" class="form-control" placeholder="请输入部门名称">
+        <form action="empolyeeQuery" class="form-inline" method="post">
+            <input type="text" class="form-control" placeholder="请输入员工名称" name="emp_name" value="${emp_name}">
             <input type="submit" value="查询" class="btn btn-success" style="width: 100px">
             <a href="pages/views/empolyee/addEmpolyee.jsp" style="position: relative;width: 100px" class="btn btn-info">添加</a>
         </form>
@@ -47,39 +48,19 @@
             <th>联系方式</th>
             <th>操作</th>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>张扬</td>
-            <td>男</td>
-            <td>65</td>
-            <td>12345678</td>
-            <td>
-                <a href="pages/views/empolyee/editEmpolyee.jsp" class="btn btn-sm">编辑</a>
-                <a href="#" class="btn btn-sm">删除</a>
-            </td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>张扬</td>
-            <td>男</td>
-            <td>65</td>
-            <td>12345678</td>
-            <td>
-                <a href="#" class="btn btn-sm">编辑</a>
-                <a href="#" class="btn btn-sm">删除</a>
-            </td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>张扬</td>
-            <td>男</td>
-            <td>65</td>
-            <td>12345678</td>
-            <td>
-                <a href="#" class="btn btn-sm">编辑</a>
-                <a href="#" class="btn btn-sm">删除</a>
-            </td>
-        </tr>
+        <c:forEach items="${lists}" var="list">
+            <tr>
+                <td>${list.id}</td>
+                <td>${list.emp_name}</td>
+                <td>${list.emp_sex}</td>
+                <td>${list.emp_age}</td>
+                <td>${list.emp_tel}</td>
+                <td>
+                    <a href="pages/views/empolyee/editEmpolyee.jsp" class="btn btn-sm">编辑</a>
+                    <a href="#" class="btn btn-sm">删除</a>
+                </td>
+            </tr>
+        </c:forEach>
     </table>
 </div>
 </body>

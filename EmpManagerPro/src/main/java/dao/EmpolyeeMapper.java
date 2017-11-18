@@ -36,7 +36,7 @@ public interface EmpolyeeMapper {
      * @param id
      * @return
      */
-    public void delEmpById(Integer id);
+    public boolean delEmpById(Integer id);
 
     /**
      * 修改一个员工信息
@@ -44,4 +44,11 @@ public interface EmpolyeeMapper {
      * @return 新的员工对象
      */
     public int updateEmp(Empolyee empolyee);
+
+    /**
+     * 根据员工名称模糊查询
+     * @param emp_name
+     * @return 员工对象集合
+     */
+    public List<Empolyee> getEmpByEmpName(String emp_name);
 }

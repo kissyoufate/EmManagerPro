@@ -3,6 +3,15 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="dao.EmpolyeeMapper">
+    <resultMap id="empolyee" type="model.Empolyee">
+        <id property="id" column="id"></id>
+        <result property="emp_name" column="emp_name"></result>
+        <result property="emp_sex" column="emp_sex"></result>
+        <result property="emp_age" column="emp_age"></result>
+        <result property="emp_tel" column="emp_tel"></result>
+        <result property="dep_id" column="dep_id"></result>
+    </resultMap>
+
     <!--public Empolyee getEmpById(Integer id);-->
     <select id="getEmpById" resultType="model.Empolyee">
         select *from tbl_empolyee where id = #{id}
@@ -10,8 +19,8 @@
 
     <!--public int addEmp(Empolyee empolyee);-->
     <insert id="addEmp" useGeneratedKeys="true">
-        insert into tbl_empolyee (emp_name,emp_sex,emp_age,emp_tel)
-        values(#{emp_name},#{emp_sex},#{emp_age},#{emp_tel})
+        insert into tbl_empolyee (emp_name,emp_sex,emp_age,emp_tel,dep_id)
+        values(#{emp_name},#{emp_sex},#{emp_age},#{emp_tel},#{dep_id})
     </insert>
 
     <!--public List<Empolyee> getAllEmps();-->
@@ -27,22 +36,29 @@
     <!--public Empolyee updateEmp(Empolyee empolyee);-->
     <update id="updateEmp" useGeneratedKeys="true">
         update tbl_empolyee
-        <set>
-            <if test="#{emp_name != null}">
-                emp_name = #{emp_name}
+        set
+        <trim suffixOverrides=",">
+            <if test="emp_name!=null and emp_name!=''">
+                emp_name = #{emp_name},
             </if>
-            <if test="#{emp_sex} != null">
-                emp_sex = {emp_sex}
+            <if test="emp_sex!=null and emp_sex!=''">
+                emp_sex = #{emp_sex},
             </if>
-            <if test="#{emp_age != null}">
-                emp_age = #{emp_age}
+            <if test="emp_age!=null and emp_age!=''">
+                emp_age = #{emp_age},
             </if>
-            <if test="#{emp_tel != null}">
-                emp_tel = #{emp_tel}
+            <if test="emp_tel!=null and emp_tel!=''">
+                emp_tel = #{emp_tel},
             </if>
-        </set>
-        <where>
-            id = #{id}
-        </where>
+            <if test="dep_id!=null and dep_id!=''">
+                dep_id = #{dep_id},
+            </if>
+        </trim>
+        where id = #{id}
     </update>
+
+    <!--public List<Empolyee> getEmpByEmpName(String emp_name);-->
+    <select id="getEmpByEmpName" resultMap="empolyee">
+        select *from tbl_empolyee where emp_name like concat(concat('%',#{emp_name}),'%')
+    </select>
 </mapper>

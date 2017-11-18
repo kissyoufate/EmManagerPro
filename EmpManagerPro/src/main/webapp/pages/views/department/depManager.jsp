@@ -27,8 +27,8 @@
 <div class="well" style="font-size: 20px">部门管理</div>
 <!--部门管理头,包含搜索部门 添加部门-->
 <div class="emp_serch">
-    <form action="#" class="form-inline">
-        <input type="text" placeholder="请输入部门名称" class="form-control">
+    <form action="queryDep" class="form-inline" method="post">
+        <input type="text" placeholder="请输入部门名称" class="form-control" name="dep_name">
         <input type="submit" value="搜索" class="btn btn-success">
         <a href="pages/views/department/addDepartment.jsp" class="btn btn-info">添加部门</a>
     </form>
