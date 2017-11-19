@@ -33,14 +33,14 @@
         <form action="empolyeeQuery" class="form-inline" method="post">
             <input type="text" class="form-control" placeholder="请输入员工名称" name="emp_name" value="${emp_name}">
             <input type="submit" value="查询" class="btn btn-success" style="width: 100px">
-            <a href="pages/views/empolyee/addEmpolyee.jsp" style="position: relative;width: 100px" class="btn btn-info">添加</a>
+            <a href="gotoAddEmp" style="position: relative;width: 100px" class="btn btn-info">添加</a>
         </form>
         <span style="color: red">${errorInfo}</span>
     </div>
 </div>
 
 <!--员工的列表展示-->
-<div class="well alert-info" style="margin-top: 20px">员工信息一览</div>
+<div class="well alert-info" style="margin-top: 20px">员工信息一览 <span>${totalCountInfo}</span></div>
 <div class="container">
     <table class="table table-hover table-bordered">
         <tr>

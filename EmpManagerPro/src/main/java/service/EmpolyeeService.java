@@ -1,15 +1,12 @@
 package service;
 
 import base.BaseException;
-import com.github.pagehelper.PageHelper;
-import dao.DepartmentMapper;
 import dao.EmpolyeeMapper;
 import model.Empolyee;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.executor.ReuseExecutor;
 import org.apache.ibatis.session.SqlSession;
 import util.SqlSessionFactoryTool;
 
+import javax.sound.midi.Soundbank;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -125,5 +122,15 @@ public class EmpolyeeService {
 
     public int getEmpCount(){
         return empolyeeMapper.getEmpCount();
+    }
+
+    public boolean addEmp(Empolyee empolyee){
+
+        int i = empolyeeMapper.addEmp(empolyee);
+        sqlSession.commit();
+        if (i > 0){
+            return true;
+        }
+        return false;
     }
 }

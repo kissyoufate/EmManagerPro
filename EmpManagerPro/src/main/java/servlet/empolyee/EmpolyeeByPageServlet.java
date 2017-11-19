@@ -35,6 +35,7 @@ public class EmpolyeeByPageServlet extends HttpServlet {
         //获得总条数
         int empCount = empolyeeService.getEmpCount();
         req.setAttribute("totalCount",empCount);
+        req.setAttribute("totalCountInfo","共" + empCount + "条记录");
 
         //获得分页数目
         int pages = 0;
