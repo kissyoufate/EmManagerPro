@@ -61,4 +61,15 @@
     <select id="getEmpByEmpName" resultMap="empolyee">
         select *from tbl_empolyee where emp_name like concat(concat('%',#{emp_name}),'%')
     </select>
+
+    <!--    public List<Empolyee> getEmpsByPage(@Param("page") int offset,
+                                        @Param("size") int size);-->
+    <select id="getEmpsByPage" resultMap="empolyee">
+        select *from tbl_empolyee limit #{offset},#{size}
+    </select>
+
+    <!--public int getEmpCount();-->
+    <select id="getEmpCount" resultType="int">
+        select count(*) from tbl_empolyee
+    </select>
 </mapper>

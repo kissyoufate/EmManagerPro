@@ -20,6 +20,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="pages/css/bootstrap.min.css">
     <link rel="stylesheet" href="pages/css/style.css">
+    <script src="pages/js/jquery-3.2.1.min.js"></script>
+    <script src="pages/js/jqPaginator.js"></script>
     <title>员工管理</title>
 </head>
 <body>
@@ -33,6 +35,7 @@
             <input type="submit" value="查询" class="btn btn-success" style="width: 100px">
             <a href="pages/views/empolyee/addEmpolyee.jsp" style="position: relative;width: 100px" class="btn btn-info">添加</a>
         </form>
+        <span style="color: red">${errorInfo}</span>
     </div>
 </div>
 
@@ -63,5 +66,25 @@
         </c:forEach>
     </table>
 </div>
+<!-- 分页按钮 -->
+<ul class="pagination" id="pagination" style="width: 450px;display: block;position: relative;margin: 0 auto;"></ul>
 </body>
 </html>
+
+<script>
+    $('#pagination').jqPaginator({
+        totalPages: ${pages},
+        visiblePages: 5,
+        currentPage: ${currentPage},
+
+        first: '<li class="first"><a href="empolyeeByPage?page=1">首页</a></li>',
+        prev: '<li class="prev"><a href="empolyeeByPage?page=${currentPage-1==0?1:currentPage-1}">上一页</a></li>',
+        next: '<li class="next"><a href="empolyeeByPage?page=${currentPage==pages?currentPage:currentPage+1}">下一页</a></li>',
+        last: '<li class="last"><a href="empolyeeByPage?page={{totalPages}}">尾页</a></li>',
+        page: '<li class="page"><a href="empolyeeByPage?page={{page}}">{{page}}</a></li>',
+        onPageChange: function (num) {
+//            window.location.href = "empolyeeByPage?page=" +  num;
+        }
+    });
+
+</script>

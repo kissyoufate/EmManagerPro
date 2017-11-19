@@ -116,7 +116,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="empolyeeQuery">
+                    <a href="empolyeeByPage?page=1">
                         <i class="icon-dollar"></i>
                         <span class="menu-text">员工管理</span>
                     </a>

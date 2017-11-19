@@ -1,6 +1,7 @@
 package dao;
 
 import model.Empolyee;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -51,4 +52,19 @@ public interface EmpolyeeMapper {
      * @return 员工对象集合
      */
     public List<Empolyee> getEmpByEmpName(String emp_name);
+
+    /**
+     * 分页获取员工数据
+     * @param offset 从第几个员工开始
+     * @param size 返回多少个
+     * @return
+     */
+    public List<Empolyee> getEmpsByPage(@Param("offset") int offset,
+                                        @Param("size") int size);
+
+    /**
+     * 获取所有员工的条数
+     * @return
+     */
+    public int getEmpCount();
 }

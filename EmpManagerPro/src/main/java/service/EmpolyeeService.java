@@ -1,6 +1,7 @@
 package service;
 
 import base.BaseException;
+import com.github.pagehelper.PageHelper;
 import dao.DepartmentMapper;
 import dao.EmpolyeeMapper;
 import model.Empolyee;
@@ -113,5 +114,16 @@ public class EmpolyeeService {
             allEmps = empolyeeMapper.getEmpByEmpName(empName);
 
         return allEmps;
+    }
+
+    public List<Empolyee> getEmpsByPageAndSize(int page,int size){
+        int offset = page * size;
+        int pageSize = size;
+        List<Empolyee> list = empolyeeMapper.getEmpsByPage(offset, pageSize);
+        return list;
+    }
+
+    public int getEmpCount(){
+        return empolyeeMapper.getEmpCount();
     }
 }

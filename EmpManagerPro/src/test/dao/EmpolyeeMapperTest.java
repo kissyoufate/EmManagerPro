@@ -87,4 +87,14 @@ public class EmpolyeeMapperTest {
         List<Empolyee> empolyeeList = mapper.getEmpByEmpName("1");
         System.out.println(empolyeeList);
     }
+
+    @Test
+    public void test5() throws IOException {
+        SqlSessionFactory sqlSessionFactory = SqlSessionFactoryTool.getSqlSessionFactory();
+        SqlSession openSession = sqlSessionFactory.openSession();
+
+        EmpolyeeMapper mapper = openSession.getMapper(EmpolyeeMapper.class);
+        List<Empolyee> empolyeeList = mapper.getEmpsByPage(2,1);
+        System.out.println(empolyeeList);
+    }
 }
