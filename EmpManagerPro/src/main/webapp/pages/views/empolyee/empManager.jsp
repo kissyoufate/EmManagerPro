@@ -59,7 +59,7 @@
                 <td>${list.emp_age}</td>
                 <td>${list.emp_tel}</td>
                 <td>
-                    <a href="pages/views/empolyee/editEmpolyee.jsp" class="btn btn-sm">编辑</a>
+                    <a href="gotoEditEmp?id=${list.id}" class="btn btn-sm">编辑</a>
                     <a href="#" class="btn btn-sm">删除</a>
                 </td>
             </tr>

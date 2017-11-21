@@ -92,6 +92,7 @@ public class EmpolyeeService {
             throw new BaseException("员工或员工id不能为空");
         }
         int i = empolyeeMapper.updateEmp(empolyee);
+        sqlSession.commit();
         if (i > 0){
             return true;
         }

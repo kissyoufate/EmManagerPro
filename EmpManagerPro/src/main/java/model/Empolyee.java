@@ -81,6 +81,7 @@ public class Empolyee {
                 ", emp_sex='" + emp_sex + '\'' +
                 ", emp_age=" + emp_age +
                 ", emp_tel='" + emp_tel + '\'' +
+                ", dep_id=" + dep_id +
                 '}';
     }
 }
