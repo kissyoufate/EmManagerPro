@@ -26,15 +26,15 @@ public class EmpolyeeEditServlet extends HttpServlet {
         System.out.println("editEmp post");
 
         //获取传递过来的参数
-        String id = req.getParameter("id");
+        String id       = req.getParameter("id");
         String emp_name = req.getParameter("emp_name");
-        String emp_sex = req.getParameter("emp_sex");
-        String emp_age = req.getParameter("emp_age");
-        String emp_tel = req.getParameter("emp_tel");
-        String dep_id = req.getParameter("dep_id");
+        String emp_sex  = req.getParameter("emp_sex");
+        String emp_age  = req.getParameter("emp_age");
+        String emp_tel  = req.getParameter("emp_tel");
+        String dep_id   = req.getParameter("dep_id");
 
-        Integer int_id =  Integer.parseInt(id);
-        Integer int_age = Integer.parseInt(emp_age);
+        Integer int_id     =  Integer.parseInt(id);
+        Integer int_age    = Integer.parseInt(emp_age);
         Integer int_dep_id = Integer.parseInt(dep_id);
 
         //创建需要修改的员工对象

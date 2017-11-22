@@ -60,7 +60,7 @@
                 <td>${list.emp_tel}</td>
                 <td>
                     <a href="gotoEditEmp?id=${list.id}" class="btn btn-sm">编辑</a>
-                    <a href="#" class="btn btn-sm">删除</a>
+                    <a href="javascript:void (0)" class="btn btn-sm" onclick="doDel(${list.id})">删除</a>
                 </td>
             </tr>
         </c:forEach>
@@ -72,6 +72,7 @@
 </html>
 
 <script>
+    //分页
     $('#pagination').jqPaginator({
         totalPages: ${pages},
         visiblePages: 5,
@@ -86,5 +87,27 @@
 //            window.location.href = "empolyeeByPage?page=" +  num;
         }
     });
+
+    //删除某一个员工
+    function doDel(id) {
+        if (window.confirm("确定要删除么?")){
+            $.post(
+                "deleEmp",
+                {
+                    "id":id
+                },
+                function (result) {
+                    var data = jQuery.parseJSON(result);
+
+                    if (data.code == "success"){
+                        alert("删除成功");
+                        window.location.href = "empolyeeByPage?page=1";
+                    }else {
+                        alert(result.message);
+                    }
+                }
+            )
+        }
+    }
 
 </script>

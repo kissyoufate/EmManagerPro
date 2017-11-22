@@ -11,13 +11,7 @@
 %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<script>
-    window.onload = function () {
-        alert(${info});
 
-        window.location.href = "${url}";
-    }
-</script>
 <html>
 <head>
     <title>操作提示</title>
@@ -27,3 +21,13 @@
 
 </body>
 </html>
+<script>
+    window.onload = function () {
+
+        if(window.confirm(${info})){
+            window.location.href = "${url}";
+        }else {
+            window.location.href = "${url}";
+        }
+    }
+</script>

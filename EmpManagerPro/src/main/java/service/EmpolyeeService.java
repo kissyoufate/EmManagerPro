@@ -76,6 +76,7 @@ public class EmpolyeeService {
 
         boolean b = empolyeeMapper.delEmpById(id);
         if (b) {
+            sqlSession.commit();
             return true;
         }
         return false;

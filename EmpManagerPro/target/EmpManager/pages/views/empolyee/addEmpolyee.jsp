@@ -81,7 +81,7 @@
         <br>
         <div class="form-inline">
             <input type="submit" value="添加员工" class="btn btn-success" id="addEmp">
-            <input type="reset" value="重置员工" class="btn btn-danger">
+            <input type="button" value="放弃添加" class="btn btn-danger" id="abandAdd">
         </div>
 </div>
 </body>
@@ -89,6 +89,7 @@
 
 <script>
     $(document).ready(function () {
+        //添加员工
         $("#addEmp").click(function () {
             var emp_name = $("#emp_name").val();
             var emp_sex = $("#emp_sex").val();
@@ -120,6 +121,13 @@
                     }
             });
 
+        })
+
+        //放弃编辑,返回上一页
+        $("#abandAdd").click(function () {
+            if(window.confirm("放弃添加么?")){
+                window.history.back();
+            }
         })
     })
 </script>
