@@ -48,4 +48,21 @@
     <select id="getDepByDepName" resultMap="department">
         select *from tbl_department where dep_name like concat(concat('%',#{dep_name}),'%')
     </select>
+
+    <!--public List<Department> getDepFromOffsetByLimit(@Param("offset") int offset,
+                                                    @Param("limit") int limit,
+                                                    @Param("searchName") String searchName
+                                                    );-->
+    <select id="getDepFromOffsetByLimit" resultMap="department">
+        select *from tbl_department
+        <if test="searchName != null and searchName != ''">
+            where dep_name like concat(concat('%',#{searchName}),'%')
+        </if>
+         limit #{offset},#{limit}
+    </select>
+
+    <!--public int getDepCount();-->
+    <select id="getDepCount" resultType="int">
+        select count(*) from tbl_department
+    </select>
 </mapper>

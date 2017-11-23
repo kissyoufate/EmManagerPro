@@ -1,6 +1,7 @@
 package dao;
 
 import model.Department;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -50,4 +51,21 @@ public interface DepartmentMapper {
      * @return 部门对象集合
      */
     public List<Department> getDepByDepName(String dep_name);
+
+    /**
+     * 从第几个开始往后查询多少个部门信息
+     * @param offset 从这里开始
+     * @param limit  查询多少个
+     * @return
+     */
+    public List<Department> getDepFromOffsetByLimit(@Param("offset") int offset,
+                                                    @Param("limit") int limit,
+                                                    @Param("searchName") String searchName
+                                                    );
+
+    /**
+     * 查询所有的部门有多少个
+     * @return
+     */
+    public int getDepCount();
 }

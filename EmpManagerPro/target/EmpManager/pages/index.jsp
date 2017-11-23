@@ -110,7 +110,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="pages/views/department/depManager.jsp">
+                    <a href="queryDep?page=1">
                         <i class="icon-dollar"></i>
                         <span class="menu-text">部门管理</span>
                     </a>

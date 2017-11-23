@@ -44,7 +44,57 @@
     <favorites_list name="EmpManager" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="DepartmentQueryServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/department/DepartmentQueryServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-308">
+              <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepartmentMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/dao/DepartmentMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="depManager.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/views/department/depManager.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="68" column="34" lean-forward="true" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepartmentMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/config/dao/DepartmentMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+              <folding>
+                <marker date="1511446816477" expanded="true" signature="552:635" ph="insert into tbl_department... " />
+                <marker date="1511446816477" expanded="true" signature="733:776" ph="delete from " />
+                <marker date="1511446816477" expanded="true" signature="905:949" ph="select *from... tbl_department" />
+                <marker date="1511446816477" expanded="true" signature="1072:1099" ph="select *from... tbl_department" />
+                <marker date="1511446816477" expanded="true" signature="1231:1556" ph="update tbl_d... " />
+                <marker date="1511446816477" expanded="true" signature="1706:1789" ph="select *from... tbl_department" />
+                <marker date="1511446816477" expanded="true" signature="2191:2396" ph="select *from... tbl_department" />
+                <marker date="1511446816477" expanded="true" signature="2504:2539" ph="select count... tbl_department" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -103,22 +153,16 @@
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/test/service/EmpolyeeServiceTest.java" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/EmpolyeeServlet.java" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/empolyee/EmpolyeeServlet.java" />
-        <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/dao/DepartmentMapper.java" />
-        <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/config/dao/DepartmentMapper.xml" />
-        <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/views/department/depManager.jsp" />
-        <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/department/DepartmentQueryServlet.java" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/test/dao/DepartmentMapperTest.java" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/pom.xml" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/config/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/test/dao/EmpolyeeMapperTest.java" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/dao/EmpolyeeMapper.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/630f6a02-1e4e-4838-a8e8-b0c9091a0745/console.sql" />
-        <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/index.jsp" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/empolyee/EmpolyeeQueryServlet.java" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/config/dao/EmpolyeeMapper.xml" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/empolyee/EmpolyeeByPageServlet.java" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/views/InfoHandle.jsp" />
-        <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/service/DepartmentService.java" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/empolyee/GotoAddEmpolyeeServlet.java" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/empolyee/EmpolyeeAddServlet.java" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/empolyee/GotoEditEmpolyeeServlet.java" />
@@ -130,6 +174,12 @@
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/empolyee/EmpolyeeDelServlet.java" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/views/empolyee/empManager.jsp" />
         <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/empolyee/EmpolyeeEditServlet.java" />
+        <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/index.jsp" />
+        <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/dao/DepartmentMapper.java" />
+        <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/config/dao/DepartmentMapper.xml" />
+        <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/service/DepartmentService.java" />
+        <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/department/DepartmentQueryServlet.java" />
+        <option value="$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/views/department/depManager.jsp" />
       </list>
     </option>
   </component>
@@ -163,10 +213,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="323" />
-    <option name="y" value="15" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -183,9 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,7 +312,7 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="empolyee" type="462c0819:PsiDirectoryNode" />
+              <item name="department" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EmpManager" type="b2602c69:ProjectViewProjectNode" />
@@ -286,6 +332,9 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,6 +389,31 @@
       <option name="PACKAGE_NAME" value="dao" />
       <option name="MAIN_CLASS_NAME" value="dao.DepartmentMapperTest" />
       <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="DepartmentService.getDepCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="EmpManager" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.DepartmentService" />
+      <option name="METHOD_NAME" value="getDepCount" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -410,31 +484,6 @@
       <option name="PACKAGE_NAME" value="dao" />
       <option name="MAIN_CLASS_NAME" value="dao.EmpolyeeMapperTest" />
       <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="EmpolyeeServiceTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="EmpManager" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.EmpolyeeServiceTest" />
-      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -606,17 +655,17 @@
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.EmpolyeeMapperTest.test2" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.DepartmentMapperTest.test2" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.EmpolyeeServiceTest.test1" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EmpolyeeMapperTest.test4" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.EmpolyeeMapperTest.test5" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.EmpolyeeMapperTest.test4" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.EmpolyeeMapperTest.test5" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.DepartmentService.getDepCount" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EmpolyeeMapperTest.test5" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EmpolyeeMapperTest.test2" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DepartmentMapperTest.test2" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EmpolyeeMapperTest.test4" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.EmpolyeeServiceTest.test1" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DepartmentService.getDepCount" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EmpolyeeMapperTest.test5" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EmpolyeeMapperTest.test2" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DepartmentMapperTest.test2" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EmpolyeeMapperTest.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -644,15 +693,16 @@
       <workItem from="1511094629945" duration="8047000" />
       <workItem from="1511266340347" duration="6947000" />
       <workItem from="1511352809430" duration="3453000" />
+      <workItem from="1511443519671" duration="3741000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EmpolyeeMapperTest_test2 - 2017.11.19 at 15h 18m 13s.xml">
-      <configuration name="EmpolyeeMapperTest.test2" configurationId="JUnit" />
+    <history-entry file="DepartmentService_getDepCount - 2017.11.23 at 22h 01m 08s.xml">
+      <configuration name="DepartmentService.getDepCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmpolyeeMapperTest_test2 - 2017.11.19 at 15h 18m 16s.xml">
-      <configuration name="EmpolyeeMapperTest.test2" configurationId="JUnit" />
+    <history-entry file="DepartmentService_getDepCount - 2017.11.23 at 22h 03m 49s.xml">
+      <configuration name="DepartmentService.getDepCount" configurationId="JUnit" />
     </history-entry>
     <history-entry file="EmpolyeeMapperTest_test2 - 2017.11.19 at 15h 18m 20s.xml">
       <configuration name="EmpolyeeMapperTest.test2" configurationId="JUnit" />
@@ -680,7 +730,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57556000" />
+    <option name="totallyTimeSpent" value="61297000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -705,11 +755,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28619528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26150393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21741453" sideWeight="0.4949495" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22008547" sideWeight="0.4949495" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29754272" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -816,20 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/views/department/depManager.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="30" column="84" lean-forward="false" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/department/DepartmentQueryServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" column="55" lean-forward="false" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar!/javax/servlet/ServletRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -856,13 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="61" column="53" lean-forward="true" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/dao/DepartmentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -897,43 +926,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="118" column="50" lean-forward="false" selection-start-line="118" selection-start-column="50" selection-end-line="118" selection-end-column="50" />
-          <folding>
-            <marker date="1511079896885" expanded="true" signature="83886:84006" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/js/jqPaginator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/config/dao/EmpolyeeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="67" column="57" lean-forward="false" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
-          <folding>
-            <marker date="1511094922443" expanded="true" signature="743:785" ph="select *from... tbl_empolyee" />
-            <marker date="1511094922443" expanded="true" signature="907:931" ph="insert into tbl_empolyee... " />
-            <marker date="1511094922443" expanded="true" signature="907:973" ph="insert into tbl_empolyee... " />
-            <marker date="1511094922443" expanded="true" signature="907:1044" ph="insert into tbl_empolyee... " />
-            <marker date="1511094922443" expanded="true" signature="1172:1197" ph="select *from... tbl_empolyee" />
-            <marker date="1511094922443" expanded="true" signature="1297:1338" ph="delete from " />
-            <marker date="1511094922443" expanded="true" signature="1471:1490" ph="update tbl_e... " />
-            <marker date="1511094922443" expanded="true" signature="1471:1502" ph="update tbl_e... " />
-            <marker date="1511094922443" expanded="true" signature="1471:1504" ph="update tbl_e... " />
-            <marker date="1511094922443" expanded="true" signature="1471:2128" ph="update tbl_e... " />
-            <marker date="1511094922443" expanded="true" signature="2274:2355" ph="select *from... tbl_empolyee" />
-            <marker date="1511094922443" expanded="true" signature="2576:2625" ph="select *from... tbl_empolyee" />
-            <marker date="1511094922443" expanded="true" signature="2733:2766" ph="select count... tbl_empolyee" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -953,33 +950,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/config/dao/DepartmentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-642">
-          <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="53" />
-          <folding>
-            <marker date="1511014196909" expanded="true" signature="552:635" ph="insert into tbl_department... " />
-            <marker date="1511014196909" expanded="true" signature="733:776" ph="delete from " />
-            <marker date="1511014196909" expanded="true" signature="905:949" ph="select *from... tbl_department" />
-            <marker date="1511014196909" expanded="true" signature="1072:1099" ph="select *from... tbl_department" />
-            <marker date="1511014196909" expanded="true" signature="1231:1556" ph="update tbl_d... " />
-            <marker date="1511014196909" expanded="true" signature="1706:1789" ph="select *from... tbl_department" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1-sources.jar!/org/apache/ibatis/session/SqlSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/8b4ae13f/630f6a02-1e4e-4838-a8e8-b0c9091a0745/emp.tbl_department">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1022,20 +997,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/service/DepartmentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/empolyee/GotoEditEmpolyeeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1063,22 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/empolyee/EmpolyeeByPageServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/dao/EmpolyeeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/empolyee/EmpolyeeAddServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
@@ -1099,10 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12312">
           <caret line="557" column="25" lean-forward="false" selection-start-line="557" selection-start-column="25" selection-end-line="557" selection-end-column="25" />
-          <folding>
-            <element signature="e#20262#20263#0" expanded="false" />
-            <element signature="e#20319#20320#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1114,20 +1061,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/views/empolyee/empManager.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/empolyee/EmpolyeeDelServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
           <caret line="32" column="47" lean-forward="false" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1140,10 +1079,125 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/dao/EmpolyeeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/config/dao/EmpolyeeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="67" column="57" lean-forward="false" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+          <folding>
+            <marker date="1511094922443" expanded="true" signature="743:785" ph="select *from... tbl_empolyee" />
+            <marker date="1511094922443" expanded="true" signature="907:931" ph="insert into tbl_empolyee... " />
+            <marker date="1511094922443" expanded="true" signature="907:973" ph="insert into tbl_empolyee... " />
+            <marker date="1511094922443" expanded="true" signature="907:1044" ph="insert into tbl_empolyee... " />
+            <marker date="1511094922443" expanded="true" signature="1172:1197" ph="select *from... tbl_empolyee" />
+            <marker date="1511094922443" expanded="true" signature="1297:1338" ph="delete from " />
+            <marker date="1511094922443" expanded="true" signature="1471:1490" ph="update tbl_e... " />
+            <marker date="1511094922443" expanded="true" signature="1471:1502" ph="update tbl_e... " />
+            <marker date="1511094922443" expanded="true" signature="1471:1504" ph="update tbl_e... " />
+            <marker date="1511094922443" expanded="true" signature="1471:2128" ph="update tbl_e... " />
+            <marker date="1511094922443" expanded="true" signature="2274:2355" ph="select *from... tbl_empolyee" />
+            <marker date="1511094922443" expanded="true" signature="2576:2625" ph="select *from... tbl_empolyee" />
+            <marker date="1511094922443" expanded="true" signature="2733:2766" ph="select count... tbl_empolyee" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/views/empolyee/empManager.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="23" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="112" column="44" lean-forward="false" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
+          <folding>
+            <marker date="1511445440028" expanded="true" signature="83864:83984" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/8b4ae13f/630f6a02-1e4e-4838-a8e8-b0c9091a0745/emp.tbl_department">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/service/EmpolyeeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="98" column="9" lean-forward="false" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+        <state relative-caret-position="202">
+          <caret line="124" column="15" lean-forward="false" selection-start-line="124" selection-start-column="15" selection-end-line="124" selection-end-column="15" />
+          <folding>
+            <element signature="e#3129#3130#0" expanded="false" />
+            <element signature="e#3180#3181#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/empolyee/EmpolyeeByPageServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="60" lean-forward="false" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/service/DepartmentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="61" column="109" lean-forward="false" selection-start-line="61" selection-start-column="109" selection-end-line="61" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/config/dao/DepartmentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding>
+            <marker date="1511446816477" expanded="true" signature="552:635" ph="insert into tbl_department... " />
+            <marker date="1511446816477" expanded="true" signature="733:776" ph="delete from " />
+            <marker date="1511446816477" expanded="true" signature="905:949" ph="select *from... tbl_department" />
+            <marker date="1511446816477" expanded="true" signature="1072:1099" ph="select *from... tbl_department" />
+            <marker date="1511446816477" expanded="true" signature="1231:1556" ph="update tbl_d... " />
+            <marker date="1511446816477" expanded="true" signature="1706:1789" ph="select *from... tbl_department" />
+            <marker date="1511446816477" expanded="true" signature="2191:2396" ph="select *from... tbl_department" />
+            <marker date="1511446816477" expanded="true" signature="2504:2539" ph="select count... tbl_department" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/dao/DepartmentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/java/servlet/department/DepartmentQueryServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../EmpManagerPro/src/main/webapp/pages/views/department/depManager.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="68" column="34" lean-forward="true" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
           <folding />
         </state>
       </provider>
