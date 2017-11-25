@@ -52,7 +52,7 @@
                 <td>${l.dep_des}</td>
                 <td>
                     <a href="pages/views/department/editDepartment.jsp" class="btn btn-sm">编辑</a>
-                    <a href="#" class="btn btn-sm">删除</a>
+                    <a href="javascript: void (0)" class="btn btn-sm" onclick="deleDepById(${l.id})">删除</a>
                 </td>
             </tr>
         </c:forEach>
@@ -79,4 +79,27 @@
 //            window.location.href = "empolyeeByPage?page=" +  num;
         }
     });
+
+    function deleDepById(id) {
+        var b = window.confirm("确定要删除这个部门么?");
+        if (b) {
+            $.post(
+                "deleDep",
+                {
+                    "id": id
+                },
+                function (result) {
+                    var JsonData = jQuery.parseJSON(result);
+                    if (JsonData.code == "success") {
+                        //删除成功
+                        alert("删除部门操作成功");
+                        window.location.href = "queryDep?page=1";
+                    } else {
+                        //删除失败
+                        alert(JsonData.message);
+                    }
+                }
+            )
+        }
+    }
 </script>

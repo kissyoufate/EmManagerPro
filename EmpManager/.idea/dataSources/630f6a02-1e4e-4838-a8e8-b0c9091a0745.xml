@@ -29,46 +29,50 @@
       <Position>3</Position>
       <DataType>varchar(200)|0</DataType>
     </column>
-    <key id="15" parent="10" name="PRIMARY">
+    <column id="15" parent="10" name="dep_mark">
+      <Position>4</Position>
+      <DataType>int(1)|0</DataType>
+    </column>
+    <key id="16" parent="10" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="16" parent="11" name="id">
+    <column id="17" parent="11" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="17" parent="11" name="emp_name">
+    <column id="18" parent="11" name="emp_name">
       <Position>2</Position>
       <DataType>varchar(10)|0</DataType>
     </column>
-    <column id="18" parent="11" name="emp_sex">
+    <column id="19" parent="11" name="emp_sex">
       <Position>3</Position>
       <DataType>varchar(10)|0</DataType>
     </column>
-    <column id="19" parent="11" name="emp_age">
+    <column id="20" parent="11" name="emp_age">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="20" parent="11" name="emp_tel">
+    <column id="21" parent="11" name="emp_tel">
       <Position>5</Position>
       <DataType>varchar(11)|0</DataType>
     </column>
-    <column id="21" parent="11" name="dep_id">
+    <column id="22" parent="11" name="dep_id">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <index id="22" parent="11" name="FK_Reference_1">
+    <index id="23" parent="11" name="FK_Reference_1">
       <ColNames>dep_id</ColNames>
     </index>
-    <key id="23" parent="11" name="PRIMARY">
+    <key id="24" parent="11" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="24" parent="11" name="FK_Reference_1">
+    <foreign-key id="25" parent="11" name="FK_Reference_1">
       <ColNames>dep_id</ColNames>
       <RefSchemaName>emp</RefSchemaName>
       <RefTableName>tbl_department</RefTableName>

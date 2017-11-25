@@ -7,18 +7,19 @@
         <id property="id" column="id"></id>
         <result property="dep_name" column="dep_name"></result>
         <result property="dep_des" column="dep_des"></result>
+        <result property="dep_mark" column="dep_mark"></result>
     </resultMap>
 
     <!--public int addDep(Department dep);-->
     <insert id="addDep" useGeneratedKeys="true">
-        insert into tbl_department(dep_name,dep_des)
-        values(#{dep_name},#{dep_des})
+        insert into tbl_department(dep_name,dep_des,dep_mark)
+        values(#{dep_name},#{dep_des},1)
     </insert>
 
     <!--public void deleteDep(Integer id);-->
-    <delete id="deleteDep">
-        delete from tbl_department where id = #{id}
-    </delete>
+    <update id="deleteDep">
+        update tbl_department set dep_mark = 0 where id = #{id}
+    </update>
 
     <!--public Department getDepById(Integer id);-->
     <select id="getDepById" resultMap="department">
@@ -27,7 +28,7 @@
 
     <!--public List<Department> getAllDep();-->
     <select id="getAllDep" resultMap="department">
-        select *from tbl_department
+        select *from tbl_department where dep_mark = 1
     </select>
 
     <!--public int updateDep(Department department);-->
@@ -46,7 +47,7 @@
 
     <!--public List<Department> getDepByDepName(String dep_name);-->
     <select id="getDepByDepName" resultMap="department">
-        select *from tbl_department where dep_name like concat(concat('%',#{dep_name}),'%')
+        select *from tbl_department where dep_name like concat(concat('%',#{dep_name}),'%') and dep_mark = 1
     </select>
 
     <!--public List<Department> getDepFromOffsetByLimit(@Param("offset") int offset,
@@ -54,15 +55,15 @@
                                                     @Param("searchName") String searchName
                                                     );-->
     <select id="getDepFromOffsetByLimit" resultMap="department">
-        select *from tbl_department
+        select *from tbl_department where dep_mark = 1
         <if test="searchName != null and searchName != ''">
-            where dep_name like concat(concat('%',#{searchName}),'%')
+            and dep_name like concat(concat('%',#{searchName}),'%')
         </if>
          limit #{offset},#{limit}
     </select>
 
     <!--public int getDepCount();-->
     <select id="getDepCount" resultType="int">
-        select count(*) from tbl_department
+        select count(*) from tbl_department where dep_mark = 1
     </select>
 </mapper>

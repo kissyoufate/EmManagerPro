@@ -9,6 +9,15 @@ public class Department {
     private Integer id;
     private String dep_name;
     private String dep_des;
+    private Integer dep_mark;
+
+    public Integer getDep_mark() {
+        return dep_mark;
+    }
+
+    public void setDep_mark(Integer dep_mark) {
+        this.dep_mark = dep_mark;
+    }
 
     public Integer getId() {
         return id;
