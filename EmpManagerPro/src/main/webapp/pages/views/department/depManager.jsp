@@ -11,6 +11,14 @@
 %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<%--<script>--%>
+    <%--var successMessage = '${addSuccess}';--%>
+    <%--if (successMessage.length > 0){--%>
+        <%--alert(successMessage);--%>
+    <%--}--%>
+<%--</script>--%>
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -32,7 +40,7 @@
     <form action="queryDep" class="form-inline" method="get">
         <input type="text" placeholder="请输入部门名称" class="form-control" name="name" value="${name}">
         <input type="submit" value="搜索" class="btn btn-success">
-        <a href="pages/views/department/addDepartment.jsp" class="btn btn-info">添加部门</a>
+        <a href="depAdd" class="btn btn-info">添加部门</a>
     </form>
 </div>
 <div class="well alert-info" style="margin-top: 20px">部门信息一览 <span>总共有${depCount}个数据</span></div>
@@ -51,7 +59,7 @@
                 <td>${l.dep_name}</td>
                 <td>${l.dep_des}</td>
                 <td>
-                    <a href="pages/views/department/editDepartment.jsp" class="btn btn-sm">编辑</a>
+                    <a href="depUpdate?id=${l.id}" class="btn btn-sm">编辑</a>
                     <a href="javascript: void (0)" class="btn btn-sm" onclick="deleDepById(${l.id})">删除</a>
                 </td>
             </tr>
@@ -60,6 +68,8 @@
 </div>
 <!-- 分页按钮 -->
 <ul class="pagination" id="pagination" style="width: 450px;display: block;position: relative;margin: 0 auto;"></ul>
+
+<p style="color: red">'${updateInfo}'</p>
 </body>
 </html>
 

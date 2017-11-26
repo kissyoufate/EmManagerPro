@@ -115,6 +115,12 @@ public class EmpolyeeService {
         return allEmps;
     }
 
+    /**
+     * 分页获取员工信息
+     * @param page 页码
+     * @param size 每页显示的个数
+     * @return
+     */
     public List<Empolyee> getEmpsByPageAndSize(int page,int size){
         int offset = page * size;
         int pageSize = size;
@@ -122,10 +128,19 @@ public class EmpolyeeService {
         return list;
     }
 
+    /**
+     * 获取员工的总个数
+     * @return
+     */
     public int getEmpCount(){
         return empolyeeMapper.getEmpCount();
     }
 
+    /**
+     * 添加一个员工
+     * @param empolyee
+     * @return
+     */
     public boolean addEmp(Empolyee empolyee){
 
         int i = empolyeeMapper.addEmp(empolyee);

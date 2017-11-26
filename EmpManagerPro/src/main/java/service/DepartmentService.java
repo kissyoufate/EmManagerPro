@@ -3,6 +3,7 @@ package service;
 import base.BaseException;
 import dao.DepartmentMapper;
 import model.Department;
+import model.Empolyee;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 import util.SqlSessionFactoryTool;
@@ -75,14 +76,81 @@ public class DepartmentService {
         return depCount;
     }
 
+    /**
+     * 根据id删除一个部门 将其dep_mark属性修改为0不显示
+     * @param id 部门id
+     * @return
+     * @throws BaseException
+     */
     public boolean deleDepById(Integer id) throws BaseException {
         boolean b = departmentMapper.deleteDep(id);
         sqlSession.commit();
         return b;
     }
 
-    @Test
-    public void test() throws BaseException {
-        boolean b = deleDepById(1);
+    public boolean addDep(Department department) throws BaseException{
+        if (department == null){
+            throw new BaseException("请传入部门对象");
+        }
+
+        if (department.getDep_name() == null || department.getDep_name().equals("")){
+            throw new BaseException("请添加部门名称");
+        }
+
+        if (department.getDep_des() == null || department.getDep_des().equals("")){
+            throw new BaseException("请输入部门的描述");
+        }
+
+        int i = departmentMapper.addDep(department);
+
+        if (i > 0){
+            sqlSession.commit();
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 根据id修改部门信息
+     * @param department 部门对象
+     * @return
+     * @throws BaseException
+     */
+    public boolean updateDep(Department department) throws BaseException{
+        if (department == null){
+            throw new BaseException("部门不能为空");
+        }
+
+        if (department.getId() == null || department.getId().equals("")){
+            throw new BaseException("部门id未找到或为空");
+        }
+
+        int i = departmentMapper.updateDep(department);
+        sqlSession.commit();
+
+        if (i > 0){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 根据id获取部门对象
+     * @param id 部门id
+     * @return
+     * @throws BaseException
+     */
+    public Department getDepById(Integer id) throws BaseException{
+        if (id == null || id.equals("")){
+            throw new BaseException("部门id为空");
+        }
+
+        Department department = departmentMapper.getDepById(id);
+
+        if (department == null) {
+            throw new BaseException("未找到部门");
+        }
+
+        return department;
     }
 }
