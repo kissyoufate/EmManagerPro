@@ -58,7 +58,6 @@
 </html>
 
 <script>
-
     //重置输入的部门内容
     function resetContent() {
         if (window.confirm("确认要清除输入的内容么?")){
