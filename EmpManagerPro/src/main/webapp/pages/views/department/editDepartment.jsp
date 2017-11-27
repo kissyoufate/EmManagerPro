@@ -49,10 +49,16 @@
         <input type="hidden" name="id" value="${dep.id}">
         <div class="form-inline">
             <input type="submit" value="保存编辑" class="btn btn-success">
-            <a href="pages/views/department/depManager.jsp" class="btn btn-danger">放弃编辑</a>
+            <a href="javascript:void (0)" class="btn btn-danger" onclick="abandUpdate()">放弃编辑</a>
         </div>
     </form>
 </div>
 <p style="color: red">'${info}'</p>
 </body>
 </html>
+
+<script>
+    function abandUpdate() {
+        window.history.back();
+    }
+</script>

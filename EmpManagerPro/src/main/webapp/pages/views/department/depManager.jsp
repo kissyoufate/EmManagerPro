@@ -69,7 +69,7 @@
 <!-- 分页按钮 -->
 <ul class="pagination" id="pagination" style="width: 450px;display: block;position: relative;margin: 0 auto;"></ul>
 
-<p style="color: red">'${updateInfo}'</p>
+<p style="color: red">${updateInfo}</p>
 </body>
 </html>
 

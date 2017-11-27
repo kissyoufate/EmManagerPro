@@ -32,7 +32,7 @@
             <div class="col-sm-8">
                 <div class="form-group">
                     <label for="" class="col-sm-2 label-info">部门名称</label>
-                    <input type="text" placeholder="请输入部门名称" class="col-sm-10 form-control" name="dep_name" value="${dep_name}">
+                    <input type="text" placeholder="请输入部门名称" class="col-sm-10 form-control" name="dep_name" value="${dep_name}" id="dep_name">
                 </div>
             </div>
         </div>
@@ -41,14 +41,14 @@
             <div class="col-sm-9">
                 <div class="form-group">
                     <label for="" class="col-sm-2 label-info">部门描述</label>
-                    <textarea class="form-control col-sm-10" rows="5" placeholder="请输入部门描述" name="dep_des">${dep_des}</textarea>
+                    <textarea class="form-control col-sm-10" rows="5" placeholder="请输入部门描述" name="dep_des" id="dep_des">${dep_des}</textarea>
                 </div>
             </div>
         </div>
         <br>
         <div class="form-inline">
             <input type="submit" value="添加部门" class="btn btn-success">
-            <input type="reset" value="重置部门" class="btn btn-danger">
+            <input type="reset" value="重置部门" class="btn btn-danger" onclick="resetContent()">
         </div>
     </form>
 
@@ -56,3 +56,14 @@
 </div>
 </body>
 </html>
+
+<script>
+
+    //重置输入的部门内容
+    function resetContent() {
+        if (window.confirm("确认要清除输入的内容么?")){
+            $("#dep_name").val("");
+            $("#dep_des").val("");
+        }
+    }
+</script>
