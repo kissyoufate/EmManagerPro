@@ -151,7 +151,7 @@
                         <i class="icon-home home-icon"></i>
                         <a href="#">首页</a>
                     </li>
-                    <li class="active">控制台</li>
+                    <li class="active">控制台 欢迎您 :${cookie.username.value}</li> <span><a href="loginOut" style="color: red;">退出登录</a></span>
                 </ul><!-- .breadcrumb -->
 
                 <div class="nav-search" id="nav-search">
@@ -1205,7 +1205,8 @@
                                             <div class="dialogs">
                                                 <div class="itemdiv dialogdiv">
                                                     <div class="user">
-                                                        <img alt="Alexa's Avatar" src="pages/assets/avatars/avatar1.png"/>
+                                                        <img alt="Alexa's Avatar"
+                                                             src="pages/assets/avatars/avatar1.png"/>
                                                     </div>
 
                                                     <div class="body">
@@ -1302,7 +1303,8 @@
 
                                                 <div class="itemdiv dialogdiv">
                                                     <div class="user">
-                                                        <img alt="Alexa's Avatar" src="pages/assets/avatars/avatar1.png"/>
+                                                        <img alt="Alexa's Avatar"
+                                                             src="pages/assets/avatars/avatar1.png"/>
                                                     </div>
 
                                                     <div class="body">

@@ -25,7 +25,20 @@
 <input type="submit" id="jsonButton" value="点击获取json">
 <p id="jsoninfo"></p>
 <hr>
-<a href="pages/index.jsp">进入管理平台</a>
+<a href="gotoManager">进入管理平台</a>
+
+
+<%--登录--%>
+<form action="login" method="post">
+    用户名:<input type="text" name="username">
+    <br>
+    密码 :<input type="password" name="password">
+    <br>
+    <input type="submit" value="登录进入">
+</form>
+
+<p style="color: red">${info}</p>
+
 </body>
 </html>
 
@@ -35,8 +48,8 @@
         //当元素失去焦点时执行方法
         $("#username").blur(function () {
             var username = $(this).val();
-            if (username.length > 0){
-                $.post("ajaxtest",{username:username},function(result){
+            if (username.length > 0) {
+                $.post("ajaxtest", {username: username}, function (result) {
                     $("#info").html(result);
                 })
             }
@@ -44,12 +57,12 @@
 
         //当元素被点击时
         $("#jsonButton").click(function () {
-            $.post("jsontest",{},function (result) {
+            $.post("jsontest", {}, function (result) {
                 $("#jsoninfo").html(result.data);
 
-                $.each(result.data,function (i, item) {
+                $.each(result.data, function (i, item) {
                     $("#jsoninfo").append(
-                        "<div>" + i + item +"</div>"
+                        "<div>" + i + item + "</div>"
                     );
                 })
 
